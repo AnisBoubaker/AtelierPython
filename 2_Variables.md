@@ -148,3 +148,9 @@ Le langage offre également d'autres opérateurs spécifiques que nous introduir
 * Les opérateurs d'appartenance à une liste/tuple/dictionnaire (`in` et `not in`)
 * Les opérateurs d'identité (`is` et `is not`)
 
+
+
+## Les fonctions prédéfinies
+
+En plus des opérateurs, le langage Python définit un ensemble de fonctions directement accessibles au programmeur (i.e. sans inclure de librairies ). On peut retrouver la liste de ces fonctions sur la [documentation officielle de Python](https://docs.python.org/3/library/functions.html#func-frozenset).
+
