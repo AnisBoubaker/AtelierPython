@@ -11,6 +11,7 @@ Cet atelier se donne en deux séances de 4 heures dont le plan des séances est 
 4. Les chaines de caractères
 5. Les ensembles et leurs opérations
 6. Les boucles
-7. La gestion d'exceptions
-8. Les modules
-9. Projet de fin d'atelier: un *web scrapper* pour comparer les prix de plusieurs sites.
+7. Les fonctions
+8. La gestion d'exceptions
+9. Les modules
+10. Projet de fin d'atelier: un *web scrapper* pour comparer les prix de plusieurs sites.
