@@ -7,9 +7,9 @@ Cet atelier se donne en deux séances de 4 heures dont le plan des séances est 
 
 1. [Installation de python](./0_Installation.md)
 2. Les variables et les opérateurs
-3. Les fonctions de base
 4. Les chaines de caractères
-5. Les ensembles et leurs opérations
+5. Les structures conditionnelles
+5. Les ensembles et leurs opérations de base
 6. Les boucles
 7. Les fonctions
 8. Les fichiers
