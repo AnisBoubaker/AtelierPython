@@ -12,6 +12,7 @@ Cet atelier se donne en deux séances de 4 heures dont le plan des séances est 
 5. Les ensembles et leurs opérations
 6. Les boucles
 7. Les fonctions
-8. La gestion d'exceptions
-9. Les modules
-10. Projet de fin d'atelier: un *web scrapper* pour comparer les prix de plusieurs sites.
+8. Les fichiers
+9. La gestion d'exceptions
+10. Les modules
+11. Projet de fin d'atelier: un *web scrapper* pour comparer les prix de plusieurs sites.
