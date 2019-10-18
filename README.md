@@ -11,7 +11,7 @@ Cet atelier se donne en deux séances de 4 heures dont le plan des séances est 
 * [Installation de l'éditeur Sublime](./0-1_Installation_sublime.md)
 4. [Les structures conditionnelles](./4_StructuresConditionnelles.md)
 5. [Les structures de données de base](./5_StructuresDeDonnees.md)
-6. Les boucles
+6. [Les boucles](./6_Boucles.md)
 7. [Les fonctions](./7_Fonctions.md)
 8. Les fichiers
 9. La gestion d'exceptions
