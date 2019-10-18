@@ -1,6 +1,6 @@
 # L'éditeur Sublime pour développer en Python
 
-L'interpréteur interactif *PyPy* est assez pratique pour tester des commandes, mais il n'est absolument pas adapté pour écrire des programmes. Pour ce faire, nous devons écrire le code de notre programme dans un éditeur afin d'être en mesure de le ré-exécuter.
+L'interpréteur interactif *PyPy* est assez pratique pour tester des commandes, mais il n'est absolument pas adapté pour écrire des programmes. Pour ce faire, nous devons écrire le code de notre programme dans un éditeur afin d'être en mesure de le sauvegarder et de l'exécuter au besoin.
 
 Plusieurs environnements de développement en Python existent sur le marché, dont:
 - IDLE: l'éditeur fournit avec Python lorsqu'on le télécharge depuis [python.org](Python.org);
