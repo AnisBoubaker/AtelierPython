@@ -26,3 +26,13 @@ print(sys.version)
 - Si le numéro de version est dans la série 3.x.x, vous avez terminé.
 - Sinon, vous devez configurer Sublime pour qu'il utilise la version 3 de Python. Pour ce faire [suive ce gist](https://gist.github.com/zaemiel/4fbd8b5125fda7a140be)
 
+### Définition de l'encodage
+
+Sublime stocke les fichiers textes, par défaut, avec un encodage en utf-8 et non ASCII (latin1). Pour ne pas avoir de problèmes avec les caractères spéciaux et pour ne pas qu'ils ne soient mal interprétés par l'interpréteur de Python, on doit spécifier l'encodage utilisé dans nos fichiers  `.py`. Nous faisons celà en ajoutant la ligne suivante en haut des fichiers de code: 
+
+```python
+# -*- coding: utf-8 -*-
+```
+
+Cette ligne devra donc être présente dans tous les programmes que nous écrirons. 
+
