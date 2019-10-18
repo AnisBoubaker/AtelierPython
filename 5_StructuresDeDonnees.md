@@ -171,9 +171,81 @@ Les fonctions associées aux tuples sont plus limitées que celles des listes, c
 
 ## 3. Les dictionnaires
 
-Un dictionnaire est un ensemble d'éléments de type `clé:valeur`.  Comparativement aux listes, un dictionnaire est une liste dont les index ne sont pas des entier (0, 1....) mais de valeurs arbitraires. On déclare un dictionnaire à l'aide des accolades `{....}`
+Un dictionnaire est un ensemble d'éléments de type `clé:valeur`.  Comparativement aux listes, un dictionnaire est une liste dont les index ne sont pas des entier (0, 1....) mais des valeurs arbitraires. On déclare un dictionnaire à l'aide des accolades `{....}`
 
 ```python
-personnage = {'nom': 'Jean', 'prenom':'Valjean', 'age':57}
+personnage = {'nom': 'Valjean', 'prenom':'Jean', 'age':57}
+```
+
+Pour accéder à un élément, on y fait référence par son index: 
+
+```python
+print(personnage['prenom'])
+>>> Jean
+```
+
+Il est possible de récupérer toutes les clés d'un dictionnaire avec la fonction `keys`:
+
+```python
+print( personnage.keys() )
+>>> dict_keys(['nom', 'prenom', 'age'])
+```
+
+De même, nous pouvons récupérer la liste des valeurs d'un dictionnaire avec la méthode `values`: 
+
+```python
+print( personnage.values() )
+>>> dict_values(['Valjean', 'Jean', 57])
+```
+
+Finalement, nous pouvons transformer un dictionnaire en une liste de tuples (couples), chaque couple ayant deux élélement: la clé et la valeur. Pour ce faire, nous utilisons la méthode `items`:
+
+```python
+print( personnage.items() )
+>>> dict_items([('nom', 'Valjean'), ('prenom', 'Jean'), ('age', 57)])
+```
+
+Ces fonctions s'avèrent très utiles lors de la composition de dictionnaires (*dictionary compréhension*), comme on l'a vu pour les listes. par exemple: 
+
+```python
+dict1 = {'a':25, 'b': 10, 'c': 32, 'd':15}
+dict2 = {k:v*2 for (k,v) in dict1.items() }
+print(dict2)
+>>> {'a': 50, 'b': 20, 'c': 64, 'd': 30}
+```
+
+
+
+### 4. Copie des structures
+
+Nous pouvons affecter une structure de données dans une autre. Par exemple: 
+
+```python
+liste1 = [1, 2, 3, 4]
+liste2 = liste1
+```
+
+Cependant, aucune copie n'est réellement créée ici (on dit qu'on copie la référence). En effet, suite à cette instruction, les deux variables `liste1` et `liste2` font référence au même objet qui contient `[1, 2, 3, 4]`. Ainsi, en modifiant `liste2`, **on modifie aussi `liste1`!** 
+
+```python
+liste1 = [1, 2, 3, 4]
+liste2 = liste1
+liste2[0] = 55
+print(liste1)
+>>> [55, 2, 3, 4]
+```
+
+Ce comportement s'observera avec toutes les structures mutables (notamment les listes et les dictionnaires). Les structures de données immutables (tuples et chaines de caractères) n'ont pas ce problème.
+
+De ce fait, il faut être prudent lorsqu'on utilise l'opérateur d'affectation avec des structures de données mutables. Si nous souhaitons réellement créer une copie *indépendante* d'une structure de données, nous utiliserons la fonction `copy`: 
+
+```python
+liste1 = [1, 2, 3, 4]
+liste2 = liste1.copy()
+liste2[0] = 55
+print(liste1)
+>>> [1, 2, 3, 4]
+print(liste2)
+>>> [55, 2, 3, 4]
 ```
 
