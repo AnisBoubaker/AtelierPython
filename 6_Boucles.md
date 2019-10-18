@@ -86,7 +86,7 @@ print(resultat)
 >>> [20, 40, 60]
 ```
 
-Il est possible de simuler les boucles `for` des autres langages avec une boucle Python `for..in..` en utilisant la fonction `range`. La fonction `range` permet d'obtenir une liste d'entiers entre un entier `debut` (0 par défaut) et un entier `fin` . Ainsi: 
+Il est possible de simuler les boucles `for` des autres langages avec une boucle Python `for..in..` en utilisant la fonction `range`. La fonction `range` permet d'obtenir une liste d'entiers entre un entier `debut` (0 par défaut) et un entier `fin`. Notez que `fin` sera exclu de la liste. Ainsi: 
 
 ```python
 resultat = 0
@@ -97,4 +97,4 @@ print(resultat)
 >>> 45
 ```
 
-Dans l'exemple précédent, `range(1, 10)` produira la liste [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]. La boucle `for..in..` itèrera sur cette liste.
+Dans l'exemple précédent, `range(1, 10)` produira la liste [1, 2, 3, 4, 5, 6, 7, 8, 9]. La boucle `for..in..` itèrera sur cette liste.
