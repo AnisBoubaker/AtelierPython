@@ -14,6 +14,15 @@ Ces éditeurs offrent beaucoup de fonctionnalités qui aident au développement.
 
 ### Installation de Sublime
 
-- Téléchargez Sublime depuis 
+- Téléchargez Sublime depuis [sublimetext.com](https://www.sublimetext.com/download)
+- Nous allons maintenant vérifier que Sublime est bien configuré pour la compilation en Python3. Créez un nouveau fichier contenant le code suivant:
+```python
+import sys 
+print(sys.version)
+```
+- Sauvegardez le fichier en mettant `.py` comme extension (ex.: test.py)
+- Exécutez le programme en pressant CTRL+B
+- Vérifiez le numéro de version de Python qui s'affiche. 
+- Si le numéro de version est dans la série 3.x.x, vous avez terminé.
+- Sinon, vous devez configurer Sublime pour qu'il utilise la version 3 de Python. Pour ce faire [suive ce gist](https://gist.github.com/zaemiel/4fbd8b5125fda7a140be)
 
-https://gist.github.com/zaemiel/4fbd8b5125fda7a140be
