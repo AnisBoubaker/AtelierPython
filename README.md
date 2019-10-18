@@ -8,6 +8,7 @@ Cet atelier se donne en deux séances de 4 heures dont le plan des séances est 
 1. [Installation de python](./0_Installation.md)
 2. [Les variables et les opérateurs](./2_Variables.md)
 3. Les chaines de caractères
+* [Installation de l'éditeur Sublime](./0-1_Installation_sublime.md)
 4. [Les structures conditionnelles](./4_StructuresConditionnelles.md)
 5. [Les structures de données de base](./5_StructuresDeDonnees.md)
 6. Les boucles
