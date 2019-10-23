@@ -15,7 +15,7 @@ Cet atelier se donne en deux séances de 4 heures dont le plan des séances est 
 7. [Les fonctions](./docs/7_Fonctions.md)
 8. [Les fichiers](./docs/8_Fichiers.md)
 9. [La gestion d'exceptions](./docs/9_Exceptions.md)
-10. Les modules
-11. Projet de fin d'atelier: un *web scrapper* pour comparer les prix de plusieurs sites.
+10. [Les modules](./docs/10_Modules.md)
+11. [Projet de fin d'atelier](./docs/Projet.md): un *web scrapper* pour comparer les prix de plusieurs sites.
 99. [Liste d'exercices](./docs/Exercices.md)
 
