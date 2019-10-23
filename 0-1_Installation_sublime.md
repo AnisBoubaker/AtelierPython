@@ -36,3 +36,38 @@ Sublime stocke les fichiers textes, par défaut, avec un encodage en utf-8 et no
 
 Cette ligne devra donc être présente dans tous les programmes que nous écrirons. 
 
+### Intégration d'un émulateur de terminal dans Sublime 
+
+Bien que Sublime permette d'exécuter du code Python directement dans l'éditeur,   la fenêtre d'exécution n'est pas interactive et ne permet d'utiliser des fonctions telles que `input`.  Pour éviter cette limitation, nous allons installer un émulateur d'un vrai terminal dans Sublime.  Ainsi, nous pourrons lancer le programme avec l'interpréteur `python3` comme si nous étions dans un terminal. 
+
+Pour ce faire: 
+
+- Allez dans le menu "Tools" > "Command Palette..."
+- Tapez "Package ", dans les choix proposés, choisir "Package control: Install package" 
+  <img src="./images/scshot_subl_install_package.png" alt="Install Package" style="zoom:75%;" />
+- Tapez "Terminus" puis Entrée
+  <img src="./images/scshot_subl_install_terminus.png" alt="Installation de terminus" style="zoom:75%;" />
+
+* Retourner dans  "Tools" > "Command Palette..." et tapez "Terminus Key". Choisissez "Preferences: Terminus key bindings"
+
+* Une nouvelle fenêtre s'ouvrira avec deux sous-fenêtres. Dans la fenêtre de gauche, remplacez le contenu par ceci: 
+
+  ```
+  [
+      { 
+          "keys": ["ctrl+alt+t"], 
+          "command": "toggle_terminus_panel", 
+          "args": {
+              "cwd": "${file_path:${folder}}"
+          }
+      },
+      { 
+      	"keys": ["ctrl+alt+q"], 
+      	"command": "terminus_close", 
+      	"context": [{ "key": "terminus_view"}]
+  	}
+  ]
+  ```
+
+* Sauvegardez et fermez la fenêtre. Vous retrouverez votre fenêtre Sublime originale. 
+* En pressant `CTRL+ALT+T` un terminal s'ouvrira en bas de votre fenêtre Sublime. En pressant CTRL+ALT+Q, celle-ci se fermera. 
