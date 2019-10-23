@@ -13,8 +13,8 @@ Cet atelier se donne en deux séances de 4 heures dont le plan des séances est 
 5. [Les structures de données de base](./5_StructuresDeDonnees.md)
 6. [Les boucles](./6_Boucles.md)
 7. [Les fonctions](./7_Fonctions.md)
-8. Les fichiers
-9. La gestion d'exceptions
+8. [Les fichiers](./8_Fichiers.md)
+9. [La gestion d'exceptions](./9_Exceptions.md)
 10. Les modules
 11. Projet de fin d'atelier: un *web scrapper* pour comparer les prix de plusieurs sites.
 99. [Liste d'exercices](./Exercices.md)
