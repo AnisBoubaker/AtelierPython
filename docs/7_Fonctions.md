@@ -15,7 +15,17 @@ Par exemple, une fonction qui détermine si un entier est pair:
 
 ```python
 def est_pair(un_entier):
-  """Renvoie True si un_entier est pair"""
+  """Renvoie True si un_entier est pair
+  Parameters
+  ----------
+  un_entier : int
+  	L'entier à analyser
+  
+  Returns
+  -------
+  est_pair: Boolean
+  	True si un_entier est pair, False sinon.
+  """
   if un_entier%2==0:
     return True
   return False

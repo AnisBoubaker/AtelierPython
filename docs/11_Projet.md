@@ -1,3 +1,3 @@
-# Projet de fin d'atelier: un comparateur de prix
+# Projet de fin d'atelier: comparateur de prix
 
 
