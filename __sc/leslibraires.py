@@ -1,11 +1,21 @@
 # -*- coding: utf-8 -*-
 
+"""Module offrant la fonction scrape qui permet d'extraire une liste de prix depuis une
+page de recherche du site LesLibraires.ca"""
+
 from bs4 import BeautifulSoup
 import requests
 
 #url = "https://www.leslibraires.ca/recherche/?s=michel+tremblay&p=1"
 
 def scrape(url):
+	"""Récupère les informations de produit à partir d'une page de recherche du site leslibraires.ca. 
+	Le résultat obtenu est une liste ayant le format: 
+	 	[{titre_du_livre:prix} ...]
+	Pour chaque résultat: 
+	- titre_du_livre est une chaine de caractères (str)
+	- prix est un réel (float)
+	"""
 	contenu = requests.get(url)
 
 	if contenu.status_code != 200:

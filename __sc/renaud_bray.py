@@ -1,9 +1,20 @@
 # -*- coding: utf-8 -*-
 
+"""Module offrant la fonction scrape qui permet d'extraire une liste de prix depuis une
+page de recherche de Renaud-Bray"""
+
 from bs4 import BeautifulSoup
 import requests
 
 def scrape(url):
+	"""Récupère les informations de produit à partir d'une page de recherche du site de RenaudBray. 
+	Le résultat obtenu est une liste ayant le format: 
+	 	[{titre_du_livre:prix} ...]
+	Pour chaque résultat: 
+	- titre_du_livre est une chaine de caractères (str)
+	- prix est un réel (float)
+	"""
+
 	contenu = requests.get(url)
 
 	# En cas d'erreur de connexion, on lève une exception ValueError
