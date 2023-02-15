@@ -114,3 +114,20 @@ print(str1)
 >>> "Nous sommes dans le 10ième mois de l'année 2019"
 ```
 
+Une autre syntaxe consiste à nommer les paramètres positionnels (qui vont s'insérer dans le texte), plutôt que d'utiliser l'ordre:
+
+```python
+str1 = "Nous sommes dans le {mois}ième mois de l'année {annee}".format(annee=2022, mois=2)
+print(str1)
+>>> "Nous sommes dans le 2ième mois de l'année 2022"
+```
+
+Finalement, nous pouvons utiliser la forme abrégé de format, qu'on appelle les F-Chaines (F-String). Pour ce faire, on précède la chaine de caractères par un **f** ou un **F**. Cette approche est pratique lorsque les données à insérer se trouvent des variables précédemment définies. 
+
+```python
+mois = 2
+annee = 2023
+str1 = F"Nous sommes dans le {mois}ième mois de l'année {annee}"
+print(str1)
+>>> "Nous sommes dans le 2ième mois de l'année 2023"
+```
