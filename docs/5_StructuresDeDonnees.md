@@ -169,6 +169,8 @@ print(tuple1)
 
 Les fonctions associées aux tuples sont plus limitées que celles des listes, compte tenu de l'immutabilité des tuples. Seules les fonctions `count` et `index` sont disponibles.
 
+Les Tuples peuvent être découpés (_slicing_) exactement de la même façon que les listes. Le résultat d'un découpage d'un tuple est un tuple. 
+
 ## 3. Les dictionnaires
 
 Un dictionnaire est un ensemble d'éléments de type `clé:valeur`.  Comparativement aux listes, un dictionnaire est une liste dont les index ne sont pas des entier (0, 1....) mais des valeurs arbitraires. On déclare un dictionnaire à l'aide des accolades `{....}`
