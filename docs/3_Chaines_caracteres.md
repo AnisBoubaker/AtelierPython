@@ -131,3 +131,4 @@ str1 = F"Nous sommes dans le {mois}ième mois de l'année {annee}"
 print(str1)
 >>> "Nous sommes dans le 2ième mois de l'année 2023"
 ```
+Notez, dans ce dernier cas, qu'on ne fait pas appel à la méthode *format*.
